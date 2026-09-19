@@ -15,7 +15,7 @@ public class HelloController {
 
     @RequestMapping(method = RequestMethod.GET, path = "api/hello", produces =MediaType.TEXT_PLAIN_VALUE)
     public String sayHello() {
-        return "Azizian, Welcome to CIS-530 Course!";
+        return "Welcome to CIS 530 - Week 1 REST API!";
     }
 
 
@@ -26,6 +26,10 @@ public class HelloController {
         courseInfo.put("course", "CIS-530");
         courseInfo.put("week", 1);
         courseInfo.put("technology", "Spring Boot 4");
+
+        courseInfo.put("instructor", "Prof. Richard Krasso");
+        courseInfo.put("university", "Bellevue University");
+
 
 
         return courseInfo;
